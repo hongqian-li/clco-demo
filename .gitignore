@@ -2,3 +2,6 @@
 .venv
 __pycache__/
 infra/
+echo ".terraform/" >> .gitignore
+echo "*.tfstate" >> .gitignore  
+echo ".terraform.lock.hcl" >> .gitignore
