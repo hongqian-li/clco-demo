@@ -28,6 +28,12 @@
       <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/logo.svg') }}" alt="Logo" />
     </div>
 
+    <div class="text-center mb-4 py-4 bg-light rounded">
+      <h2 class="text-primary mb-2">🚀 Cloud Computing Project</h2>
+      <p class="lead mb-1">Deployed with Azure Terraform & GitHub Actions</p>
+      <p class="text-muted small">Team: Kamil, Hongqian, Marko, Muslim, Chamberg</p>
+    </div>
+
     <div class="grid row-gap-3 col-md-6 mb-4 mx-auto text-center">
 
       <h3 class="p-2 g-col-6 fw-bold fs-5">Tell me your name and message!</h3>
@@ -43,8 +49,7 @@
 
       <h3 class="p-2 g-col-6 fw-bold fs-5">We had the following visitors</h3>
       <p class="fw-bold">Mood of the last ten visitors
-        <button hx-get="/sentiment" hx-target="#modals-here" hx-trigger="click" 
-          class="btn btn-outline-primary btn-sm"
+        <button hx-get="/sentiment" hx-target="#modals-here" hx-trigger="click" class="btn btn-outline-primary btn-sm"
           _="on htmx:afterOnLoad wait 10ms then add .show to #modal then add .show to #modal-backdrop">
           Analyse sentiment
         </button>
